@@ -1,0 +1,35 @@
+$kind: http-example
+request:
+  url: http://localhost:3002/api/articles
+  method: POST
+  body:
+    type: json
+    content: '{ "title": "Backend Weekly", "content": "This has been a long ride through Node and Express." }'
+response:
+  statusCode: 201
+  statusText: Created
+  headers:
+    x-powered-by: Express
+    access-control-allow-origin: "*"
+    content-type: application/json; charset=utf-8
+    content-length: "276"
+    etag: W/"114-SmDj/H93CIuPYBLc8y0KLI3cM14"
+    date: Wed, 23 Sep 2026 02:38:59 GMT
+    connection: keep-alive
+    keep-alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+        "message": "Article created successfully",
+        "data": {
+          "title": "Backend Weekly",
+          "content": "This has been a long ride through Node and Express.",
+          "author": "Guest",
+          "_id": "6ab33bc2c1b224593935ea7c",
+          "createdAt": "2026-09-23T02:38:58.899Z",
+          "updatedAt": "2026-09-23T02:38:58.899Z",
+          "__v": 0
+        }
+      }
+order: 1790131142880

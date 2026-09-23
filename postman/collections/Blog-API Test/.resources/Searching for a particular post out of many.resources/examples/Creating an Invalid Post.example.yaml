@@ -1,0 +1,27 @@
+$kind: http-example
+request:
+  url: http://localhost:3002/api/articles
+  method: POST
+  body:
+    type: json
+    content: '{ "title": "Backend Weekly" }'
+response:
+  statusCode: 400
+  statusText: Bad Request
+  headers:
+    x-powered-by: Express
+    access-control-allow-origin: "*"
+    content-type: application/json; charset=utf-8
+    content-length: "96"
+    etag: W/"60-btmn8ST6eTHRn482D+FBzgJXfMs"
+    date: Wed, 23 Sep 2026 02:41:27 GMT
+    connection: keep-alive
+    keep-alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+        "message": "Please provide a valid article title and content",
+        "error": "\"content\" is required"
+      }
+order: 4379772867362157

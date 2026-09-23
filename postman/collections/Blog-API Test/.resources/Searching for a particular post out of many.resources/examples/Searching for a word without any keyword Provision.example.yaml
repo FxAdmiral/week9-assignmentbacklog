@@ -1,0 +1,26 @@
+$kind: http-example
+request:
+  url: http://localhost:3002/api/articles/search
+  method: GET
+  body:
+    type: json
+    content: '{ "title": "Updated Title Here" }'
+response:
+  statusCode: 400
+  statusText: Bad Request
+  headers:
+    x-powered-by: Express
+    access-control-allow-origin: "*"
+    content-type: application/json; charset=utf-8
+    content-length: "55"
+    etag: W/"37-P3zWghkDCca2qOgzAcv2YyCWhAE"
+    date: Wed, 23 Sep 2026 03:06:37 GMT
+    connection: keep-alive
+    keep-alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+        "message": "Please provide a search keyword using ?q="
+      }
+order: 1082647898877829

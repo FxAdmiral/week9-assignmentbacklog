@@ -1,0 +1,84 @@
+$kind: http-example
+request:
+  url: http://localhost:3002/api/articles
+  method: GET
+  body:
+    type: json
+    content: ""
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    x-powered-by: Express
+    access-control-allow-origin: "*"
+    content-type: application/json; charset=utf-8
+    content-length: "1424"
+    etag: W/"590-Q3IdomthbvnmoeI6G79DUrHNY0M"
+    date: Wed, 23 Sep 2026 02:44:54 GMT
+    connection: keep-alive
+    keep-alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+        "message": "Articles fetched successfully",
+        "page": 1,
+        "limit": 10,
+        "data": [
+          {
+            "_id": "6ab33bc2c1b224593935ea7c",
+            "title": "Backend Weekly",
+            "content": "This has been a long ride through Node and Express.",
+            "author": "Guest",
+            "createdAt": "2026-09-23T02:38:58.899Z",
+            "updatedAt": "2026-09-23T02:38:58.899Z",
+            "__v": 0
+          },
+          {
+            "_id": "6ab33b6bc1b224593935ea7b",
+            "title": "Learning Role of a Full stack Engineer",
+            "content": "Programming Languages and their BUg issue",
+            "author": "Guest",
+            "createdAt": "2026-09-23T02:37:31.171Z",
+            "updatedAt": "2026-09-23T02:37:31.171Z",
+            "__v": 0
+          },
+          {
+            "_id": "6ab3379fc1b224593935ea7a",
+            "title": "Backend Weekly",
+            "content": "This has been a long ride through Node and Express.",
+            "author": "Guest",
+            "createdAt": "2026-09-23T02:21:19.187Z",
+            "updatedAt": "2026-09-23T02:21:19.187Z",
+            "__v": 0
+          },
+          {
+            "_id": "6ab1540f6c9ba3e92de3058e",
+            "title": "backend weekly",
+            "content": "This has been a long ride to all that is a developer",
+            "author": "Guest",
+            "createdAt": "2026-09-21T15:58:07.942Z",
+            "updatedAt": "2026-09-21T15:58:07.942Z",
+            "__v": 0
+          },
+          {
+            "_id": "6ab150af26dcef8fc0b7f719",
+            "title": "backend weekly",
+            "content": "This has been a long ride to all that is a developer",
+            "author": "Guest",
+            "createdAt": "2026-09-21T15:43:43.364Z",
+            "updatedAt": "2026-09-21T15:43:43.364Z",
+            "__v": 0
+          },
+          {
+            "_id": "6ab1503e8a5e0b1182b01786",
+            "title": "backend weekly",
+            "content": "This has been a long ride",
+            "author": "Guest",
+            "createdAt": "2026-09-21T15:41:50.091Z",
+            "updatedAt": "2026-09-21T15:41:50.091Z",
+            "__v": 0
+          }
+        ]
+      }
+order: 4061682227173021

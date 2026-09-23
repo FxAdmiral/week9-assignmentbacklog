@@ -1,0 +1,35 @@
+$kind: http-example
+request:
+  url: http://localhost:3002/api/articles/6ab33bc2c1b224593935ea7c
+  method: PUT
+  body:
+    type: json
+    content: '{ "title": "Updated Title Here" }'
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    x-powered-by: Express
+    access-control-allow-origin: "*"
+    content-type: application/json; charset=utf-8
+    content-length: "280"
+    etag: W/"118-u1WZo+mub7c1ioXOFMCjXDzI5vg"
+    date: Wed, 23 Sep 2026 03:00:20 GMT
+    connection: keep-alive
+    keep-alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+        "message": "Article updated successfully",
+        "data": {
+          "_id": "6ab33bc2c1b224593935ea7c",
+          "title": "Updated Title Here",
+          "content": "This has been a long ride through Node and Express.",
+          "author": "Guest",
+          "createdAt": "2026-09-23T02:38:58.899Z",
+          "updatedAt": "2026-09-23T03:00:20.032Z",
+          "__v": 0
+        }
+      }
+order: 1036806556704934

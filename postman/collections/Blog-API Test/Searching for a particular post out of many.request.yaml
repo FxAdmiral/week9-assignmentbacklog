@@ -1,0 +1,5 @@
+$kind: http-request
+url: ""
+method: GET
+examples: .resources/Searching for a particular post out of many.resources/examples
+order: 1790131066262

@@ -1,0 +1,26 @@
+$kind: http-example
+request:
+  url: http://localhost:3002/api/articles/6ab33bc2c1b224593935ea7c
+  method: DELETE
+  body:
+    type: json
+    content: '{ "title": "Updated Title Here" }'
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    x-powered-by: Express
+    access-control-allow-origin: "*"
+    content-type: application/json; charset=utf-8
+    content-length: "42"
+    etag: W/"2a-oziM0LCEpHZDffsgPALfX4rMQQc"
+    date: Wed, 23 Sep 2026 03:02:05 GMT
+    connection: keep-alive
+    keep-alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+        "message": "Article deleted successfully"
+      }
+order: 2359647124191098
